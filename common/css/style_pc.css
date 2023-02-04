@@ -1,0 +1,465 @@
+@charset "utf-8";
+
+/* CSS Document */
+@media screen and (min-width: 737px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: YuGothic, 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, sans-serif;
+  }
+
+  img {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .sp {
+    display: none;
+  }
+
+  header {
+    padding: 0 30px;
+    overflow: hidden;
+  }
+
+  #logo {
+    float: left;
+    margin-top: 25px;
+  }
+
+  nav {
+    overflow: hidden;
+    padding: 20px 0;
+    float: right;
+  }
+
+  nav li {
+    margin-left: 30px;
+    float: left;
+    font-weight: bold;
+  }
+
+  nav li a {
+    color: #700303;
+    transition: all ease 0.3s;
+  }
+
+  nav li a:hover {
+    color: #c7b016;
+  }
+
+  nav li:nth-child(-n+5) {
+    margin-top: 11px;
+  }
+
+  nav li:last-child a {
+    display: block;
+    text-decoration: none;
+    transition: ease all .3s;
+    line-height: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    width: 170px;
+    height: 50px;
+    background: #560404;
+    background: linear-gradient(to right, #560404, #912b07);
+    position: relative;
+  }
+
+  nav li:last-child a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 2px;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    z-index: 0;
+    margin: auto;
+    transition: ease-out all .2s;
+    background-color: #fff;
+  }
+
+  nav li:last-child a:hover::before {
+    width: 166px;
+    height: 46px;
+  }
+
+  nav li:last-child a span {
+    color: #fff;
+    transition: ease all .3s;
+    display: block;
+    position: absolute;
+    top: 18px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  nav li:last-child a:hover span {
+    color: #700303;
+  }
+
+  main {
+    clear: both;
+    overflow: hidden;
+  }
+
+  #topPhoto {
+    background-image: url("../../images/mainPhoto.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 520px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 200px;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    font-size: 5em;
+    line-height: 70%;
+  }
+
+  #topPhoto span {
+    font-size: 0.4em;
+  }
+
+  main section {
+    margin: 80px auto;
+  }
+
+  section h2 {
+    text-align: center;
+    font-size: 2em;
+    line-height: 200%;
+    color: #700303;
+    letter-spacing: 0.35em;
+    margin-bottom: 40px;
+  }
+
+  section h2 span {
+    display: block;
+    font-size: 0.45em;
+    line-height: 100%;
+    margin-top: -11px;
+    letter-spacing: 0.4em;
+  }
+
+  section h2::before {
+    content: "";
+    display: block;
+    background-color: #700303;
+    width: 100px;
+    height: 5px;
+    margin: auto;
+  }
+
+  #concept p {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  #menu .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #menu .container div {
+    width: 50%;
+  }
+
+  #menu .container div img {
+    width: 100%;
+    height: auto;
+  }
+
+  #menu .container>:nth-child(1) {
+    order: 1;
+  }
+
+  #menu .container>:nth-child(2) {
+    order: 2;
+  }
+
+  #menu .container>:nth-child(3) {
+    order: 4;
+  }
+
+  #menu .container>:nth-child(4) {
+    order: 3;
+  }
+
+  #menu .container section h3 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+  #menu section:first-of-type {
+    box-sizing: border-box;
+    width: calc(50% - 50px);
+    padding: 0 0 0 calc(50% - 500px);
+    margin: 40px 0 0;
+  }
+
+  #menu section:last-of-type {
+    box-sizing: border-box;
+    width: calc(50% - 90px);
+    padding: 0 calc(50% - 500px) 0 0;
+    margin: 40px 0 0;
+  }
+
+  #menu ul li {
+    clear: both;
+    margin-bottom: 2em;
+    position: relative;
+  }
+
+  #menu ul li p {
+    margin: 0.2em 0 0 0.5em;
+    display: block;
+    float: left;
+  }
+
+  #menu li p+span {
+    margin-left: 20px;
+  }
+
+  .menu-iced {
+    color: #37a3ff;
+  }
+
+  .menu-hot {
+    color: #ff3a3a;
+  }
+
+  #menu ul li p:last-of-type {
+    display: block;
+    float: right;
+  }
+
+  #menu ul li p[title]{
+    font-size: 1.1em;
+    margin-bottom: 1.0em;
+    line-height: 110%;
+  }
+
+  #menu ul p[title]:after{
+    font-size: 0.6em;
+    display: block;
+    content: attr(title);
+  }
+
+  .menu-new::before {
+    content: "NEW";
+    display: inline-block;
+    background-color: #7a1414;
+    color: #fff;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 13px 8px;
+    position: absolute;
+    top: -40px;
+    left: -50px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+  .menu-new::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #7a1414;
+    position: absolute;
+    top: -7px;
+    left: -19px;
+  }
+
+  #gallery ul {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+  }
+
+  #gallery ul li {
+    width: 24.5%;
+    position: relative;
+  }
+
+  #gallery ul li img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery-new::before {
+    content: "NEW";
+    display: inline-block;
+    background-color: #7a1414;
+    color: #fff;
+    font-weight: bold;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 27px 18px;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+
+  .gallery-new::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #7a1414 transparent transparent transparent;
+    position: absolute;
+    top: 30px;
+    left: 41px;
+  }
+
+  #info {
+    width: 720px;
+    margin: auto;
+    font-size: 1.2em;
+  }
+
+  #info ul span {
+    color: #700303;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  #access {
+    background-color: #fbf5f5;
+    padding: 80px;
+  }
+
+  #access dt, #access dd {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  #access dt {
+    font-weight: bold;
+    color: #700303;
+  }
+
+  #access dd {
+    margin-bottom: 25px;
+  }
+
+  #access p {
+    color: #700303;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 200%;
+  }
+
+  #access p span {
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  #access .material-icons {
+    font-size: 1.6em;
+  }
+
+  #reserv form {
+    background-color: #fbf5f5;
+    padding: 40px 170px;
+    width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  #reserv form dt {
+    color: #700303;
+    font-weight: bold;
+    float: left;
+    width: 160px;
+    clear: both;
+    font-size: 1.2em;
+  }
+
+  #reserv form dd {
+    float: right;
+    width: 500px;
+  }
+
+  #reserv form dt span {
+    color: #fff;
+    background-color: #700303;
+    display: inline-block;
+    padding: 0 10px;
+    margin-left: 8px;
+    font-size: 0.7em;
+  }
+
+  #reserv form input[type="text"],
+  #reserv form select,
+  #reserv form textarea {
+    padding: 5px;
+    margin-bottom: 30px;
+    border: solid 1px #e1d5d7;
+  }
+
+  #reserv form input[type="text"] {
+    min-width: 250px;
+  }
+
+  #reserv form textarea {
+    width: 100%;
+    height: 8em;
+  }
+
+  #reserv form input[type="submit"] {
+    border: solid 2px #700303;
+    background-color: #700303;
+    color: #fff;
+    padding: 15px;
+    width: 270px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    display: block;
+    clear: both;
+    font-size: 1.3em;
+  }
+
+  #reserv form input[type="submit"]:hover {
+    transition: all ease 0.3s;
+    background-color: #fff;
+    color: #700303;
+  }
+
+  footer {
+    background-color: #700303;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+  }
+}

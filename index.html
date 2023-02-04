@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+<title>IBJ cafe</title>
+<link href="common/css/style_pc.css" rel="stylesheet" type="text/css">
+<link href="common/css/style_sp.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="common/css/lightbox.min.css">
+</head>
+
+<body>
+<header>
+  <div id="logo"><a href="index.html"><img src="common/images/logo.png" alt="IBJ cafe" width="143" height="29"></a></div>
+  <div id="nav-toggle">
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  </div>
+  <div id="global-nav">
+    <nav>
+      <ul>
+        <li><a href="#concept">CONCEPT</a></li>
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#info">INFORMATION</a></li>
+        <li><a href="#access">ACCESS</a></li>
+        <li><a href="#reserv"><span>RESERVATION</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1 id="topPhoto">Taste the Time<br><span>わたしらしい時間を過ごす場所。</span></h1>
+  <section id="concept">
+    <h2>CONCEPT<span>コンセプト</span></h2>
+    <p>コーヒーの香りとバリスタの笑顔。<br class="pc">
+    お客様にibjcafeを心から楽しんでいただくことが、私たちの喜びです。<br class="pc">
+    また来店したくなる。そんな素敵なカフェを創っていきます。</p>
+  </section>
+
+  <section id="menu">
+    <h2>MENU<span>メニュー</span></h2>
+    <div class="container">
+      <section>
+        <h3>Drink</h3>
+        <ul>
+          <li><p title="Blend Coffee">ブレンドコーヒー</p><span class="menu-iced">ICED</span>/<span class="menu-hot">HOT</span><p>200円</p></li>
+          <li><p title="Cafe Latte">カフェラテ</p><span class="menu-iced">ICED</span>/<span class="menu-hot">HOT</span><p>250円</p></li>
+          <li><p title="Caramel Soy Late">キャラメルソイラテ</p><span class="menu-hot">HOT</span><p>300円</p></li>
+          <li><p title="Tea">紅茶</p><span class="menu-iced">ICED</span>/<span class="menu-hot">HOT</span><p>200円</p></li>
+          <li><p title="Home Made Lemonade">自家製レモネード</p><span class="menu-iced">ICED</span><p>300円</p></li>
+        </ul>
+      </section>
+      <div><img src="images/menu01.jpg" alt="Drink menu"></div>
+
+      <section>
+        <h3>Food</h3>
+        <ul>
+          <li class="menu-new"><p title="Blue Berry Yogurt">ブルーベリーヨーグルト</p><p>350円</p></li>
+          <li><p title="Marinated Salmon Sandwich">サーモンマリネサンド</p><p>450円</p></li>
+          <li><p title="Lemon Mousse Tart">レモンムースのタルト</p><p>400円</p></li>
+        </ul>
+      </section>
+      <div><img src="images/menu02.jpg" alt="Food menu"></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>GALLERY<span>ギャラリー</span></h2>
+    <ul>
+      <li class="gallery-new"><a href="images/gallery01.jpg" data-lightbox="group" data-title="ブルーベリーヨーグルト"><img src="images/gallery01.jpg" width="346" height="214" alt=""></a></li>
+      <li><a href="images/gallery02.jpg" data-lightbox="group" data-title="サーモンマリネサンド"><img src="images/gallery02.jpg" width="346" height="214" alt=""></a></li>
+      <li class="pc"><a href="images/gallery03.jpg" data-lightbox="group" data-title="自家製レモネード"><img src="images/gallery03.jpg" width="346" height="214" alt=""></a></li>
+      <li class="pc"><a href="images/gallery04.jpg" data-lightbox="group" data-title="レモンムースのタルト"><img src="images/gallery04.jpg" width="346" height="214" alt=""></a></li>
+    </ul>
+  </section>
+
+  <section id="info">
+    <h2>INFORMATION<span>お知らせ</span></h2>
+    <ul>
+      <li><span>09/01</span>秋だけの期間限定スペシャルドリンクキャラメルソイラテ発売</li>
+      <li><span>09/04</span>ピクチャーブックアドアワード開催決定</li>
+      <li><span>08/31</span>大切な人へのお祝いメッセージを送ろう！メッセージカードサービス開始</li>
+      <li><span>08/27</span>9月よりハロウィン商品販売開始</li>
+    </ul>
+  </section>
+
+  <section id="access">
+    <h2>ACCESS<span>アクセス</span></h2>
+    <dl>
+      <dt>住所</dt>
+      <dd>札幌市豊平区平岸2条7丁目4-8</dd>
+      <dt>営業時間</dt>
+      <dd>(平日) 10:00～21:00 <br class="sp"> (土日) 10:00～19:00</dd>
+    </dl>
+    <p>お電話でのご予約はこちら<br><i class="material-icons">call</i><span>011-123-4567</span></p>
+  </section>
+  <section id="reserv">
+    <h2>RESERVATION<span>ご予約</span></h2>
+    <form action="#" method="post">
+      <dl>
+        <dt>お名前<span>必須</span></dt>
+        <dd><input type="text" placeholder="(例)山田花子" required></dd>
+        <dt>ふりがな<span>必須</span></dt>
+        <dd><input type="text" placeholder="(例)やまだはなこ" required></dd>
+        <dt>電話番号<span>必須</span></dt>
+        <dd><input type="text" placeholder="(例)090-1234-5678" required></dd>
+        <dt>日程<span>必須</span></dt>
+        <dd>
+          <select name="m1" id="yyyymmdd" required>
+            <option value="" selected="selected">20XX/MM/DD</option>
+            <option value="20190901">2019/09/01</option>
+            <option value="20190901">2019/09/02</option>
+            <option value="20190901">2019/09/03</option>
+            <option value="20190901">2019/09/04</option>
+            <option value="20190901">2019/09/05</option>
+            <option value="20190901">2019/09/06</option>
+            <option value="20190901">2019/09/07</option>
+            <option value="20190901">2019/09/08</option>
+            <option value="20190901">2019/09/09</option>
+            <option value="20190901">2019/09/10</option>
+            <option value="20190901">2019/09/11</option>
+            <option value="20190901">2019/09/12</option>
+            <option value="20190901">2019/09/13</option>
+            <option value="20190901">2019/09/14</option>
+            <option value="20190901">2019/09/15</option>
+            <option value="20190901">2019/09/16</option>
+            <option value="20190901">2019/09/17</option>
+            <option value="20190901">2019/09/18</option>
+            <option value="20190901">2019/09/19</option>
+            <option value="20190901">2019/09/20</option>
+          </select>
+          <select name="h1" class="txtcolor_gray necessary" id="time" required>
+            <option value="" selected="selected">---</option>
+            <option value="10:00">10:00</option>
+            <option value="10:30">10:30</option>
+            <option value="11:00">11:00</option>
+            <option value="11:30">11:30</option>
+            <option value="12:00">12:00</option>
+            <option value="12:30">12:30</option>
+            <option value="13:00">13:00</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+            <option value="20:00">20:00</option>
+          </select>
+        </dd>
+        <dt>人数<span>必須</span></dt>
+        <dd>
+          <select name="h1" class="txtcolor_gray necessary" id="namber" required>
+            <option value="" selected="selected">---</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </dd>
+        <dt>ご要望</dt>
+        <dd><textarea placeholder="ご要望をご入力ください"></textarea></dd>
+      </dl>
+      <input name="submit" type="submit" value="確認画面へ進む">
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>IBJ Cafe 20XX cAll Rights Reserved</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="common/js/lightbox.min.js"></script>
+<script>
+//スマホハンバーガーメニュー
+(function($) {
+    $(function () {
+        $('#nav-toggle').on('click', function() {
+            $('body').toggleClass('open');
+        });
+        $('#global-nav a').on('click', function() {
+            $('body').toggleClass('open');
+        });
+    });
+})(jQuery);
+
+//スムーズスクロール
+$(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top - 50;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+
+//ライトボックスオプション
+lightbox.option({
+  'wrapAround': true,
+  'alwaysShowNavOnTouchDevices': true
+})
+/*document.oncopy=function(e){
+  return false;
+}*/
+</script>
+</body>
+</html>
